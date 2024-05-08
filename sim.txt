@@ -1,0 +1,100 @@
+AODV
+The send packet are 698 :
+ The Received packet are :694
+ The Forwarded packet are: 0
+  packet Delivery Ratio :0.994269
+
+DSR
+
+The send packet are 528 :
+ The Received packet are :498
+ The Forwarded packet are: 0
+  packet Delivery Ratio :0.943182
+
+DSDV
+
+The send packet are 6 :
+ The Received packet are :0
+ The Forwarded packet are: 0
+  packet Delivery Ratio :0.000000
+
+
+Through put
+
+AODV 
+ 0.209401
+DSDV
+0
+DSR
+0.288882
+
+Residual Energy AODV
+Residual Energy of node 0 is 37.982386
+Residual Energy of node 1 is 37.982386
+Residual Energy of node 2 is 37.874770
+Residual Energy of node 3 is 37.070693
+Residual Energy of node 4 is 37.807375
+Residual Energy of node 5 is 36.888078
+Residual Energy of node 6 is 37.040530
+Residual Energy of node 7 is 37.886616
+Residual Energy of node 8 is 37.049815
+Residual Energy of node 9 is 37.982386
+Residual Energy of node 10 is 37.979257
+Residual Energy of node 11 is 37.812691
+Residual Energy of node 12 is 37.862272
+Residual Energy of node 13 is 37.982320
+Residual Energy of node 14 is 37.968129
+Residual Energy of node 15 is 37.811947
+Residual Energy of node 16 is 37.956908
+the total residual energy of the network is 640.938559
+
+Residual Energy DSR
+Residual Energy of node 0 is 37.866256
+Residual Energy of node 1 is 37.864658
+Residual Energy of node 2 is 36.426899
+Residual Energy of node 3 is 36.661975
+Residual Energy of node 4 is 37.606530
+Residual Energy of node 5 is 37.645672
+Residual Energy of node 6 is 37.849269
+Residual Energy of node 7 is 36.599157
+Residual Energy of node 8 is 37.687567
+Residual Energy of node 9 is 37.755054
+Residual Energy of node 10 is 37.864547
+Residual Energy of node 11 is 37.750708
+Residual Energy of node 12 is 37.619632
+Residual Energy of node 13 is 37.865345
+Residual Energy of node 14 is 37.752472
+Residual Energy of node 15 is 37.754118
+Residual Energy of node 16 is 37.810559
+the total residual energy of the network is 638.380418
+
+Residual Energy DSDV
+Residual Energy of node 0 is 35.134449
+Residual Energy of node 1 is 35.134363
+Residual Energy of node 2 is 35.134190
+Residual Energy of node 3 is 35.134607
+Residual Energy of node 4 is 35.135051
+Residual Energy of node 5 is 35.069322
+Residual Energy of node 6 is 35.069366
+Residual Energy of node 7 is 35.069510
+Residual Energy of node 8 is 35.069323
+Residual Energy of node 9 is 35.069265
+Residual Energy of node 10 is 35.134334
+Residual Energy of node 11 is 35.069654
+Residual Energy of node 12 is 35.069539
+Residual Energy of node 13 is 35.069711
+Residual Energy of node 14 is 35.069164
+Residual Energy of node 15 is 35.069409
+Residual Energy of node 16 is 35.134694
+the total residual energy of the network is 596.635951
+
+
+
+plot "energy.csv" using 1:2 with linespoints,"energy.csv" using 1:3 with linespoints,"energy.csv" using 1:4 with linespoints
+
+plot "energy.csv" using 1:2 with linespoints title "AODV","energy.csv" using 1:3 with linespoints title "DSDV","energy.csv" using 1:4 with linespoints title "DSR"
+
+
+ plot "inst_through.csv" using 1:2 with linespoints title "AODV","inst_through.csv" using 1:3 with linespoints title "DSR"
+
+
